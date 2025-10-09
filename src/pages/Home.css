@@ -1,0 +1,12 @@
+.mi-card{
+  width: 18rem;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and shadow */
+  border: 1px solid #ddd; /* Initial border */
+}
+
+.mi-card:hover {
+  transform: translateY(-5px) scale(1.02); /* Lift and slightly enlarge the card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  border-color: black; /* Change border color on hover */
+}
+
