@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import MiNavbar from './components/Navbar.jsx'
+import React from 'react';
+import Footer from './components/Footer.jsx';
 /* 
 import Home from './pages/Home.jsx'
 import PokemonLista from './pages/PokemonLista.jsx'
@@ -25,6 +27,7 @@ function App() {
           <Route path="/pokemon/:name" element={<PokemonDetalle />} />
           </Routes> */}
       </div>
+      <Footer />
     </div>
   )
 }
