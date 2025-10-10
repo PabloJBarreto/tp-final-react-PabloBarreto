@@ -133,3 +133,8 @@ text-decoration: none;
   transition: color 0.3s;
 }
 
+.Footer {
+    bottom: 0;
+    color: white;
+    font-size: 25px;
+}
