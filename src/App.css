@@ -4,27 +4,36 @@
 }
 
 .App {
-  background-size: cover;
+  /* background-size: cover; */
   min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+  width: 99vw;
+  /* display: flex;
+  flex-direction: column; */
+
 }
-/* .AppContent {
-  background-color: rgba(255, 255, 255, 0.604);
+ .AppContent {
+  text-decoration: none;
+  
+
+  
+  
+  /* background-color: rgba(255, 255, 255, 0.604);
   margin: 0 auto;
   padding-bottom: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   /*add padding arriba
-  padding-top: 2rem;
-} */
+  padding-top: 2rem; */
+} 
 
 
 .main {
       flex-grow: 1; /* Permite que el contenido principal se expanda y empuje el footer */
     }
+
+
+/*Home*/
 
     .home {
   display: flex;
@@ -32,6 +41,7 @@
   align-items: center;
   justify-content: center;
   min-height: 86.5vh;
+  width: 100%;
 }
 
 .titulo {
@@ -45,5 +55,81 @@
 }
 .subtitulo{
  font-size: 1.5rem; 
+}
+
+/*Listado*/
+
+.pokemon-card-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  
+}
+
+.pokemon-card {
+  border: 1px solid rgba(0, 0, 0, 0.681);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.827);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
+text-decoration: none;  
+}
+
+.pokemon-card:hover {
+  transform: scale(1.10);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-card .pokemon-id {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+}
+.pokemon-card .pokemon-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 8px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.pokemon-card .pokemon-info {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-cargar-mas {
+  background-color: rgba(0, 0, 0, 0.866);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;      
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+  color: #dceedd;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 

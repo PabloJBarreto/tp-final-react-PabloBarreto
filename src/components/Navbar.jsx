@@ -7,7 +7,7 @@ function MiNavbar() {
   return (
     <Navbar bg="dark" data-bs-theme="dark"expand="lg">
       <Container>
-        <Navbar.Brand href="#home"><img
+        <Navbar.Brand><img
                             src={logo}
                             width="30"
                             height="30"
@@ -16,8 +16,8 @@ function MiNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#list">Listado</Nav.Link>
+            <Nav.Link as={Link} to="/"> Inicio </Nav.Link>
+            <Nav.Link as={Link} to="/pokemon"> Listado </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

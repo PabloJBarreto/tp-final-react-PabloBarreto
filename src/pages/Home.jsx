@@ -14,7 +14,7 @@ Home() {
                                   height="95"
                                   className="d-inline-block align-top"
                                   alt="Pokemon logo"></img>Bienvenidos a Pokepedia</div>
-<p class='subtitulo'>La guía definitiva para entrenadores y fans Pokémon</p> 
+<p className='subtitulo'>La guía definitiva para entrenadores y fans Pokémon</p> 
 
 <Card className="mi-card">
               <Card.Img variant="top" src={goo} className="mx-auto d-block" style={{ maxWidth: '200px', height: 'auto' }} />
@@ -24,7 +24,7 @@ Home() {
                       Explorá la mejor enciclopedia sobre Pokémons. 
                       Vas a poder visualizar imágenes, características únicas y mucho más. 
         </Card.Text>
-        <Button variant="dark">Comenzar</Button>
+        <Button variant="dark"><Link to="/pokemon">Comenzar</Link></Button>
       </Card.Body>
     </Card>
     
