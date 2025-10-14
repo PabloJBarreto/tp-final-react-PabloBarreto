@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="fixed-bottom">
       <Container fluid>
-        <Row className="bg-dark text-white p-2">
+        <Row className="bg-dark text-white p-0">
           <Col className="d-flex justify-content-center">
             <div className="mx-1">
               <Image
@@ -59,11 +59,7 @@ function Footer() {
               <p className="mx-1">Datos oficiales de PokeAPI</p>
             </div>
           </Col>
-          {/* </Row>
-        <Row className='bg-dark text-white'>
-      <p>Desarrollado con React + Vite + Bootstrap| Datos oficiales de PokeAPI</p>
-                  
- */}
+         
         </Row>
       </Container>
     </footer>
