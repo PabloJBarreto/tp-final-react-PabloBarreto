@@ -7,10 +7,10 @@ import pokeapi from "../images/pokeapi.png";
 
 function Footer() {
   return (
-    <footer className="fixed-bottom">
+    <footer className="fixed-bottom w-100">
       <Container fluid>
         <Row className="bg-dark text-white p-0">
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center"> 
             <div className="mx-1">
               <Image
                 src={react}
@@ -41,11 +41,15 @@ function Footer() {
             <div className="d-flex flex-column align-items-center">
               <p className="mx-1">Desarrollado con React + Vite + Bootstrap</p>
             </div>
-          </Col>
-          <Col>
+          </Col> 
+          </Row>
+          <Row className="bg-dark text-white p-0">
+          {/* <Col> */}
             <p>&copy; Creado por Pablo Barreto | 2025</p>
-          </Col>
-          <Col className="d-flex justify-content-center">
+        {/* </Col> */}
+        </Row>
+        <Row className="bg-dark text-white p-0">
+           <Col className="d-flex justify-content-center"> 
             <div className="mx-1">
               <Image
                 src={pokeapi}

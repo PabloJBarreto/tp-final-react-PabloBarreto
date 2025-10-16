@@ -5,8 +5,8 @@ import logo from "../images/pokeball.svg";
 
 function MiNavbar() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark" expand="lg">
-      <Container>
+    <Navbar bg="dark" data-bs-theme="dark" expand="sm">
+      <div className="container-fluid">
         <Navbar.Brand>
           <img
             src={logo}
@@ -15,7 +15,7 @@ function MiNavbar() {
             className="d-inline-block align-top"
             alt="Pokemon logo"
           ></img>{" "}
-          Pokepedia | La Enciclopedia Pokemon
+          Pokepedia 
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -30,7 +30,7 @@ function MiNavbar() {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 }

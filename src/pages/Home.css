@@ -2,6 +2,7 @@
   width: 18rem;
    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and shadow */
   border: 1px solid #ddd; /* Initial border */
+  margin-bottom: 150px;
 }
 
 .mi-card:hover {
