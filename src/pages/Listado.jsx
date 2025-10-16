@@ -1,28 +1,33 @@
-import { useState, useEffect } from 'react'
-import Tarjeta from '../components/Tarjeta' 
-
-
+import { useState, useEffect } from "react";
+import Tarjeta from "../components/Tarjeta";
 
 function Listado() {
+  const [pokemones, setPokemones] = useState([]);
 
-  const [pokemones, setPokemones] = useState([])
-
-function getPokemons()
-  {
-    fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=${pokemones.length}`)
-      .then(res => res.json())
-      .then(data => setPokemones([...pokemones, ...data.results.map((p) => ({
-        name: p.name,
-        id: obtenerIdDesdeLink(p.url),
-        sprites: {
-          other: {
-            dream_world: {
-              front_default: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${obtenerIdDesdeLink(p.url)}.svg`
-            }
-          }
-        }
-      }))]))
-      .catch(err => console.log(err))
+  function getPokemons() {
+    fetch(
+      `https://pokeapi.co/api/v2/pokemon?limit=20&offset=${pokemones.length}`
+    )
+      .then((res) => res.json())
+      .then((data) =>
+        setPokemones([
+          ...pokemones,
+          ...data.results.map((p) => ({
+            name: p.name,
+            id: obtenerIdDesdeLink(p.url),
+            sprites: {
+              other: {
+                dream_world: {
+                  front_default: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${obtenerIdDesdeLink(
+                    p.url
+                  )}.svg`,
+                },
+              },
+            },
+          })),
+        ])
+      )
+      .catch((err) => console.log(err));
   }
 
   function obtenerIdDesdeLink(url) {
@@ -31,29 +36,28 @@ function getPokemons()
   }
 
   useEffect(() => {
-    getPokemons()
-  }, [])
+    getPokemons();
+  }, []);
 
   const cargarPokemones = () => {
-    getPokemons()
+    getPokemons();
+  };
 
-
-  }
-
-
-  if (!pokemones) return <p>Cargando...</p>
+  if (!pokemones) return <p>Cargando...</p>;
 
   return (
     <>
-      <div className='titulo'>Listado de Pokémons</div>
-      <div className='pokemon-card-box'>        
-        {pokemones.map(pokemon => (
+      <div className="titulo">Listado de Pokémons</div>
+      <div className="pokemon-card-box">
+        {pokemones.map((pokemon) => (
           <Tarjeta key={pokemon.name} pokemon={pokemon} />
         ))}
       </div>
-      <button className='btn-cargar-mas' onClick={cargarPokemones}>Cargar Más</button>
+      <button className="btn-cargar-mas" onClick={cargarPokemones}>
+        Cargar Más
+      </button>
     </>
-  )
+  );
 }
 
 export default Listado;

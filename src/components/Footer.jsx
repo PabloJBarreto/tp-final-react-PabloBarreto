@@ -8,9 +8,9 @@ import pokeapi from "../images/pokeapi.png";
 function Footer() {
   return (
     <footer className="fixed-bottom w-100">
-      <Container fluid>
+      <Container>
         <Row className="bg-dark text-white p-0">
-          <Col className="d-flex justify-content-center"> 
+          <Col className="d-flex justify-content-center">
             <div className="mx-1">
               <Image
                 src={react}
@@ -41,15 +41,13 @@ function Footer() {
             <div className="d-flex flex-column align-items-center">
               <p className="mx-1">Desarrollado con React + Vite + Bootstrap</p>
             </div>
-          </Col> 
-          </Row>
-          <Row className="bg-dark text-white p-0">
-          {/* <Col> */}
-            <p>&copy; Creado por Pablo Barreto | 2025</p>
-        {/* </Col> */}
+          </Col>
         </Row>
         <Row className="bg-dark text-white p-0">
-           <Col className="d-flex justify-content-center"> 
+          <p>&copy; Creado por Pablo Barreto | 2025</p>
+        </Row>
+        <Row className="bg-dark text-white p-0">
+          <Col className="d-flex justify-content-center">
             <div className="mx-1">
               <Image
                 src={pokeapi}
@@ -63,7 +61,6 @@ function Footer() {
               <p className="mx-1">Datos oficiales de PokeAPI</p>
             </div>
           </Col>
-         
         </Row>
       </Container>
     </footer>

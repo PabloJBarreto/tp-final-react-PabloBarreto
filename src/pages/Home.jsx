@@ -17,10 +17,9 @@ function Home() {
         ></img>
         Bienvenidos a Pokepedia
       </div>
-      <p className="subtitulo">
+      <div className="subtitulo">
         La guía definitiva para entrenadores y fans Pokémon
-      </p>
-
+      </div>
       <Card className="mi-card">
         <Card.Img
           variant="top"
