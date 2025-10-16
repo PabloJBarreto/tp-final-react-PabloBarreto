@@ -37,7 +37,7 @@ function Listado() {
 
   useEffect(() => {
     getPokemons();
-  }, []);
+  }, );
 
   const cargarPokemones = () => {
     getPokemons();

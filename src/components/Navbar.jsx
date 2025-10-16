@@ -15,7 +15,7 @@ function MiNavbar() {
             className="d-inline-block align-top"
             alt="Pokemon logo"
           ></img> {''}
-            Pokepedia | La Enciclopedia Pokemon
+            Pokepedia | La Enciclopedia Pokémon
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
