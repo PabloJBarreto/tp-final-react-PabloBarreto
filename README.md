@@ -5,37 +5,49 @@ Se trata de una app web moderna e interactiva desarrollada con React + Vite + Bo
 ✨ Características Principales:
 
 🎯 Listado de Pokémons: Permite visualizar Pokémons de forma dinámica.
+
 🔍 Detalles de Pokémons: Permite obtener información detallada de cada Pokémon (estadísticas, tipos, habilidades, movimientos).
+
 📱 Navegación Responsiva: Menú hamburguesa para dispositivos móviles.
+
 ⚡ Navegación rápida: A partir de un sistema de routing optimizado con React Router.
 
 🛠️ Tecnologías Utilizadas:
 
 React 19.1.1 - Biblioteca de JavaScript para interfaces de usuario.
+
 Vite 7.1.7 - Herramienta de construcción y desarrollo ultra-rápida.
+
 Bootstrap 5.3.8 - Framework CSS de código abierto orientado a la creación de interfaces de usuario para la web.
-React Router DOM 7.9.3 - Navegación y routing SPA
-PokéAPI - API REST para datos completos de Pokémon
-CSS3 - Estilos personalizados con variables CSS
-Responsive Design - Para dispositivos móviles
+
+React Router DOM 7.9.3 - Navegación y routing SPA.
+
+PokéAPI - API REST para datos completos de Pokémon.
+
+CSS3 - Estilos personalizados con variables CSS.
+
+Responsive Design - Para dispositivos móviles.
 
 📦 Instalación:
 
-1. Clona el repositorio
+1. Cloná el repositorio
 
 git clone https://github.com/PabloJBarreto/tp-final-react-PabloBarreto.git
+
 cd tp-final-react-PabloBarreto
 
-2. Instala las dependencias
+2. Instalá las dependencias
 
 npm install
 
 🚀 Ejecución:
 
 npm run dev
+
 La aplicación estará disponible en http://localhost:5173
 
 🗂️ Estructura del Proyecto
+
 tp-final-react-PabloBarreto/
 ├── public/
 ├── src/
