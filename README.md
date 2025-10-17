@@ -1,53 +1,54 @@
-🌟 Pokepedia - La enciclopedia Pokémon
+# 🌟 Pokepedia - La enciclopedia Pokémon
 
 Se trata de una app web moderna e interactiva desarrollada con React + Vite + Bootstrap que permite explorar y descubrir todo sobre tus Pokémons favoritos.
 
-✨ Características Principales:
+## ✨ Características Principales:
 
-🎯 Listado de Pokémons: Permite visualizar Pokémons de forma dinámica.
+- **🎯 Listado de Pokémons:** Permite visualizar Pokémons de forma dinámica.
 
-🔍 Detalles de Pokémons: Permite obtener información detallada de cada Pokémon (estadísticas, tipos, habilidades, movimientos).
+- **🔍 Detalles de Pokémons:** Permite obtener información detallada de cada Pokémon (estadísticas, tipos, habilidades, movimientos).
 
-📱 Navegación Responsiva: Menú hamburguesa para dispositivos móviles.
+- **📱 Navegación Responsiva:** Menú hamburguesa para dispositivos móviles.
 
-⚡ Navegación rápida: A partir de un sistema de routing optimizado con React Router.
+- **⚡ Navegación rápida:** A partir de un sistema de routing optimizado con React Router.
 
-🛠️ Tecnologías Utilizadas:
+## 🛠️ Tecnologías Utilizadas:
 
-React 19.1.1 - Biblioteca de JavaScript para interfaces de usuario.
+- **React** 19.1.1 - Biblioteca de JavaScript para interfaces de usuario.
 
-Vite 7.1.7 - Herramienta de construcción y desarrollo ultra-rápida.
+- **Vite** 7.1.7 - Herramienta de construcción y desarrollo ultra-rápida.
 
-Bootstrap 5.3.8 - Framework CSS de código abierto orientado a la creación de interfaces de usuario para la web.
+- **Bootstrap 5.3.8** - Framework CSS de código abierto orientado a la creación de interfaces de usuario para la web.
 
-React Router DOM 7.9.3 - Navegación y routing SPA.
+- **React Router DOM** 7.9.3 - Navegación y routing SPA.
 
-PokéAPI - API REST para datos completos de Pokémon.
+- **PokéAPI** - API REST para datos completos de Pokémon.
 
-CSS3 - Estilos personalizados con variables CSS.
+- **CSS3** - Estilos personalizados con variables CSS.
 
-Responsive Design - Para dispositivos móviles.
+- **Responsive Design** - Para dispositivos móviles.
 
-📦 Instalación:
+## 📦 Instalación:
 
-1. Cloná el repositorio
+1. **Cloná el repositorio**
 
 git clone https://github.com/PabloJBarreto/tp-final-react-PabloBarreto.git
 
 cd tp-final-react-PabloBarreto
 
-2. Instalá las dependencias
+2. **Instalá las dependencias**
 
 npm install
 
-🚀 Ejecución:
+## 🚀 Ejecución:
 
 npm run dev
 
 La aplicación estará disponible en http://localhost:5173
 
-🗂️ Estructura del Proyecto
+## 🗂️ Estructura del Proyecto
 
+```
 tp-final-react-PabloBarreto/
 ├── public/
 ├── src/
@@ -56,13 +57,13 @@ tp-final-react-PabloBarreto/
 │ │ ├── Home.jsx # Página principal
 │ │ ├── Listado.jsx # Listado paginado de Pokémons
 │ │ ├── Detalle.jsx # Detalle de Pokémons
-│ │  
+│ │
 │ ├── components/
 │ │ ├── Navbar.jsx # Navegación responsiva
 │ │ ├── Tarjeta.jsx # Tarjeta individual de Pokémons
 │ │ └── Footer.jsx # Pie de página responsivo
 │ ├── images/ # Recursos gráficos y fondos
-│ │  
+│ │
 │ ├── App.jsx # Componente principal con routing
 │ ├── App.css # Estilos principales
 │ ├── index.css # Estilos globales base
@@ -72,6 +73,9 @@ tp-final-react-PabloBarreto/
 ├── vite.config.js
 ├── eslint.config.js
 └── README.md
+```
 
-🌟 Creado por Pablo Barreto
+## 👤 Autor
+
+**Pablo Barreto**
 🎯 Trabajo Práctico Final Integrador - Programación Web con React
