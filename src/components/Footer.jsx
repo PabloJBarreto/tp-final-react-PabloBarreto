@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Stack, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import react from "../images/react.svg";
 import vite from "../images/vite.svg";
 import bootstrap from "../images/bootstrap.svg";
@@ -7,8 +7,8 @@ import pokeapi from "../images/pokeapi.png";
 
 function Footer() {
   return (
-    <footer className="fixed-bottom w-100">
-      <Container>
+    <footer>
+      <Container fluid>
         <Row className="bg-dark text-white p-0">
           <Col className="d-flex justify-content-center">
             <div className="mx-1">
